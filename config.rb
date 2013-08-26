@@ -10,7 +10,7 @@
 relative_assets = true
 
 # Path locations.
-http_path             = '/compass/'
+http_path             = "/compass/"
 sass_dir              = "src"
 extensions_dir        = "sass-extensions"
 css_dir               = "../css"
