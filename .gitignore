@@ -1,0 +1,6 @@
+
+# Ignore caching
+.sass-cache/
+
+# Ignore outputed CSS
+css/
