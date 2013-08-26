@@ -1,5 +1,5 @@
 # Compass Seed
-## The seed for better structured styles based on sass/compass.
+**The seed for better structured styles based on sass/compass.**
 
 This project is a structure suggestion for scalable stylesheets.
 
@@ -53,4 +53,4 @@ This structure is an extension of the one proposed on http://thesassway.com/begi
             |
             |-- _base.sass                # Import global needs for the partials.
             |-- global.sass               # Global sass compilation.
-            |-- contact.sass              # Contextual sass compilation saple.
+            |-- contact.sass              # Contextual sass compilation sample.
