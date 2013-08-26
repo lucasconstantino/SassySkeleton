@@ -8,7 +8,7 @@ This project is a structure suggestion for scalable stylesheets.
 
 Clone this repository as the stylesheet directory of your project. For a shortcut, inside your project's root, clone using the following command:
 
-    $ git clone https://github.com/lucascsilva/compass-seed.git stylesheet
+    $ git clone https://github.com/lucascsilva/compass-seed.git compass
 
 
 ## Directory layout
@@ -18,15 +18,15 @@ This structure is an extension of the one proposed on http://thesassway.com/begi
 
     app/
     |
+    |-- css/                              # For compiled css only.
     |-- fonts/                            # For font files.
     |-- images/                           # For non-sprite images.
     |   |-- sprites/                      # For compiled sprite images only.
     |   
     |-- images-source/                    # For sprite source images.
     |-- scripts/
-    `-- stylesheet/                       # For all source sass files.
+    `-- compass/                          # For all source sass files.
         |-- config.rb                     # Compass configuration file.
-        |-- css/                          # For compiled css only.
         |-- extensions/                   # For local compass extensions. Please, refeer to http://compass-style.org/help/tutorials/extensions/
         |-- src/
             |
