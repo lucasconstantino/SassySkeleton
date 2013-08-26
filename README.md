@@ -10,6 +10,8 @@ Clone this repository as the stylesheet directory of your project. For a shortcu
 
     $ git clone https://github.com/lucascsilva/compass-seed.git compass
 
+Read the config.rb file to adapt compass to your use case.
+
 
 ## Directory layout
 
