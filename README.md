@@ -6,8 +6,8 @@ This project is a structure suggestion for scalable stylesheets.
 
 ## How to use
 
-Clone this repository as the stylesheet directory of your project. For a shortcut, inside your project's root, clone using the following:
-    git clone https://github.com/lucascsilva/compass-seed.git stylesheet
+Clone this repository as the stylesheet directory of your project. For a shortcut, inside your project's root, clone using the following command:
+    $ git clone https://github.com/lucascsilva/compass-seed.git stylesheet
 
 
 ## Directory layout
