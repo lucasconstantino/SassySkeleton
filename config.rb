@@ -1,8 +1,5 @@
-#
-# This file is only needed for Compass/Sass integration. If you are not using
-# Compass, you may safely ignore or delete this file.
-#
 
+# Set the syntax in usage.
 preferred_syntax = :sass
 
 # Change this to :production when ready to deploy the CSS to the live server.
@@ -12,12 +9,17 @@ environment = :development
 # In development, we can turn on the FireSass-compatible debug_info.
 firesass = true
 
+# http_path = "/path/on/server/"
 
 # Location of the theme's resources.
-css_dir         = "css"
-sass_dir        = "src"
-extensions_dir  = "sass-extensions"
-images_dir      = "../images"
+css_dir               = "css"
+sass_dir              = "src"
+extensions_dir        = "sass-extensions"
+images_dir            = "../images"
+generated_images_dir  = "../images/sprites"
+sprite_load_path      = "../images-source"
+javascripts_dir       = "../scripts"
+fonts_dir             = "../fonts"
 
 
 # Require any additional compass plugins installed on your system.

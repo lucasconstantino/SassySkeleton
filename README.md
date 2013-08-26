@@ -4,55 +4,53 @@
 This project is a structure suggestion for scalable stylesheets.
 
 
-## How to use compass-seed
+## How to use
 
-Clone the compass-seed repository into the stylesheet directory of your applicaton and start styling.
+Clone this repository as the stylesheet directory of your project. For a shortcut, inside your project's root, clone using the following:
+    git clone https://github.com/lucascsilva/compass-seed.git stylesheet
 
 
-## Directory Layout
+## Directory layout
 
-    app/                --> all of the files to be used in production
-      css/              --> css files
-        app.css         --> default stylesheet
-      img/              --> image files
-      index.html        --> app layout file (the main html template file of the app)
-      js/               --> javascript files
-        controllers.js  --> application controllers
-        filters.js      --> custom angular filters
-        services.js     --> custom angular services
-        widgets.js      --> custom angular widgets
-      lib/              --> angular and 3rd party javascript libraries
-        angular/
-          angular.js            --> the latest angular js
-          angular.min.js        --> the latest minified angular js
-          angular-*.js  --> angular add-on modules
-          version.txt           --> version number
-      partials/         --> angular view partials (partial html templates)
-        partial1.html
-        partial2.html
+The structure presented below is a proposal for the structure of a webapp. While this project only brings structure to the stylesheet directory, we decided to show it on the scope where it could be used to make it easier to understand where to place our files.
+This structure is an extension of the one proposed on http://thesassway.com/beginner/how-to-structure-a-sass-project.
 
-    config/testacular.conf.js        --> config file for running unit tests with Testacular
-    config/testacular-e2e.conf.js    --> config file for running e2e tests with Testacular
-
-    scripts/            --> handy shell/js/ruby scripts
-      e2e-test.sh       --> runs end-to-end tests with Testacular (*nix)
-      e2e-test.bat      --> runs end-to-end tests with Testacular (windows)
-      test.bat          --> autotests unit tests with Testacular (windows)
-      test.sh           --> autotests unit tests with Testacular (*nix)
-      web-server.js     --> simple development webserver based on node.js
-
-    test/               --> test source files and libraries
-      e2e/              -->
-        runner.html     --> end-to-end test runner (open in your browser to run)
-        scenarios.js    --> end-to-end specs
-      lib/
-        angular/                --> angular testing libraries
-          angular-mocks.js      --> mocks that replace certain angular services in tests
-          angular-scenario.js   --> angular's scenario (end-to-end) test runner library
-          version.txt           --> version file
-      unit/                     --> unit level specs/tests
-        controllersSpec.js      --> specs for controllers
-
-## Contact
-
-For more information on AngularJS please check out http://angularjs.org/
+    app/
+    |
+    |-- fonts/                            # For font files.
+    |-- images/                           # For non-sprite images.
+    |   |-- sprites/                      # For compiled sprite images only.
+    |   
+    |-- images-source/                    # For sprite source images.
+    |-- scripts/
+    `-- stylesheet/                       # For all source sass files.
+        |-- config.rb                     # Compass configuration file.
+        |-- css/                          # For compiled css only.
+        |-- extensions/                   # For local compass extensions. Please, refeer to http://compass-style.org/help/tutorials/extensions/
+        |-- src/
+            |
+            |-- lib/                      # Sass logic only files (sass that doens't create css output).
+            |   |-- _fonts.sass           # Suggestion for a module.
+            |   |-- _colors.sass          # Suggestion for a module.
+            |   |-- _sprites.sass         # Suggestion for a module.
+            |   |-- _functions.sass       # Etc.
+            |
+            |-- mixins/                   # Reusable mixins only.
+            |   |-- _utility.sass         # Suggestion for a module.
+            |   |-- _anchors.sass         # Suggestion for a module.
+            |   |-- _tables.sass          # Etc.
+            |   
+            |-- partials/                 # CSS Constructors.
+            |   |-- _header.sass          # Sugestion for a partial.
+            |   |-- _footer.sass          # Sugestion for a partial.
+            |   |-- _forms.sass           # Sugestion for a partial.
+            |   |-- _navigation.sass      # Etc.
+            |   
+            |-- vendor/                   # CSS or Sass from other projects.
+            |   |-- _compass.sass         # Compass SASS framework
+            |   |-- _jquery.ui.core.css   # Sugestion for a vendor.
+            |   |-- _bootstrap.scss       # Etc.
+            |
+            |-- _base.sass                # Import global needs for the partials.
+            |-- global.sass               # Global sass compilation.
+            |-- contact.sass              # Contextual sass compilation saple.
