@@ -3,20 +3,12 @@
 # For more detailed info, please refer to http://compass-style.org/help/tutorials/configuration-reference/
 
 
-# =================================
-# Environment
-# =================================
-
-# Change this to ":production" when ready to deploy the CSS to the live server.
-environment = :development
+# ====================================================
+# Main Configuration
+# ====================================================
 
 # Set the syntax in usage.
 preferred_syntax = :sass
-
-# Select your output styles for development or production environments
-# (e.g. ":expanded", ":nested", ":compact" or ":compressed")
-development_output_style  = :expanded
-production_output_style   = :compressed
 
 
 
@@ -56,13 +48,23 @@ fonts_dir             = "../fonts"
 # You shouldn't need to directives below.
 # =================================
 
-# Set environment dependant outputing style.
-output_style = (environment == :development) ? development_output_style : production_output_style
+# Development configs.
+if environment.nil? || environment == :production
 
-# Remove line comments depending on environment.
-line_comments = (environment == :development)
+  output_style  = :compressed
+  line_comments = true
+  debug_info    = true
+
+# Non Development (e.g. QA, stage, production, ...)configs.
+else
+
+  output_style  = :expanded
+  line_comments = false
+  debug_info    = false
+
+end
 
 # Pass environment dependant options to sass.
 sass_options = {
-  :debug_info => (environment == :development)
+  :debug_info => debug_info
 }
