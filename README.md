@@ -1,5 +1,5 @@
-# Compass Boilerplate
-**The boilerplate for better structured styles based on sass/compass.**
+# Compass Skeleton
+**The skeleton for better structured styles based on sass/compass.**
 
 This project is a structure suggestion for scalable stylesheets.
 
@@ -8,7 +8,7 @@ This project is a structure suggestion for scalable stylesheets.
 
 Clone this repository as the stylesheet directory of your project. For a shortcut, inside your project's root, clone using the following command:
 
-    $ git clone https://github.com/lucascsilva/compass-boilerplate.git compass
+    $ git clone https://github.com/lucascsilva/compass-skeleton.git compass
 
 Read the config.rb file to adapt compass to your use case.
 
