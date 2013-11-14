@@ -6,6 +6,7 @@ This project is a structure suggestion for scalable stylesheets.
 
 ## How to use
 
+### Using Git
 Clone this repository as the stylesheet directory of your project. For a shortcut, inside your project's root, clone using the following command:
 
     $ git clone https://github.com/lucascsilva/compass-boilerplate.git compass
