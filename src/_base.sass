@@ -1,34 +1,41 @@
-/**
- * @file
- * Global Needs Manager
- *
- * Use this file to load all global needs for the partials.
- * No style outputing should occur from these imports.
- */
+/*
+|------------------------------------------------------------------------------
+| Core Requirements Loader
+|------------------------------------------------------------------------------
+|
+| Use this file to set all global requirements.
+| 
+| This file, if used correctly, should generate no output
+| when import to other files. This means we can safely
+| import it everywere without resulting in repeated CSS
+| over differente files. For this to work, you have to
+| remember that only non-outputing vendors should be
+| imported here.
+*/
 
-// ==========================================================================
-// Vendor - import globally useful vendors.
-// ==========================================================================
+// ------------------------------------
+// Vendors (non-outputing only)
+// ------------------------------------
 
-@import vendor/all
-
-
-// ==========================================================================
-// Library - import globally useful libraries.
-// ==========================================================================
-
-@import lib/all
-
-
-// ==========================================================================
-// Mixins - import globally useful mixins.
-// ==========================================================================
-
-@import mixins/all
+@import vendor/core
 
 
-// ==========================================================================
-// Placeholders - import globally useful placeholders.
-// ==========================================================================
+// ------------------------------------
+// Library
+// ------------------------------------
 
-@import placeholders/all
+@import lib/core
+
+
+// ------------------------------------
+// Mixins
+// ------------------------------------
+
+@import mixins/core
+
+
+// ------------------------------------
+// Placeholders
+// ------------------------------------
+
+@import placeholders/core
