@@ -1,34 +1,51 @@
+#==========================================================
+# Compass Configuration
+#==========================================================
+# This file should walk you throw the configuration of the
+# Compass usage in your project. For more detailed info,
+# please refer to http://compass-style.org/help/tutorials/configuration-reference/.
 
-# This file should walk you throw the configuration of the compass usage in your project.
-# For more detailed info, please refer to http://compass-style.org/help/tutorials/configuration-reference/
 
-
-# ====================================================
+#======================================
 # Main Configuration
-# ====================================================
+#======================================
 
 # Set the syntax in usage.
 preferred_syntax = :sass
 
 
 
-# =================================
+#======================================
 # Directory Structure
-# =================================
+#======================================
 
-# Set usage of relative paths (as opposed to absolute path) for assets (e.g. images)
+# Set usage of relative paths (as opposed to absolute path).
 relative_assets = true
 
 # Path locations.
-http_path             = "/compass/"
-sass_dir              = "src"
-extensions_dir        = "sass-extensions"
-css_dir               = "../css"
-images_dir            = "../images"
-generated_images_dir  = "../images/sprites"
-sprite_load_path      = "../images-source"
-javascripts_dir       = "../scripts"
-fonts_dir             = "../fonts"
+http_path             = "/compass/"         # - Should point to the location of
+                                            #   this current file from the base
+                                            #   path of the server.
+sass_dir              = "src"               # - The directory where to look for
+                                            #   partials.
+extensions_dir        = "extensions"        # - The directory for sass plugins.
+css_dir               = "../"               # - The path for placing compiled
+                                            #   CSS. Note that this path points
+                                            #   one directory above the current
+                                            #   directory.
+images_dir            = "../images"         # - The place Compass will look for
+                                            #   images when images are required
+                                            #   via the "image" function.
+generated_images_dir  = "../images/sprites" # - Where compass will place the
+                                            #   generated sprites. Note that each
+                                            #   sprite source (i.e. sprite
+                                            #   directory) will show here as one
+                                            #   image.
+sprite_load_path      = "../images-source"  # - The source for the sprite images.
+                                            #   Each directory inside this will
+                                            #   be then generated as a sprite.
+fonts_dir             = "../fonts"          # - The directory where the font
+                                            #   files are kept.
 
 
 
@@ -36,7 +53,8 @@ fonts_dir             = "../fonts"
 # Vendor Settings
 # =================================
 
-# Add importing paths to use vendor's partials that reside outside the compass directory.
+# Add importing paths to use vendor's partials that reside outside
+# this directory.
 # add_import_path '../../FOO/BAR'
 
 # Require any additional compass plugins.
@@ -45,26 +63,30 @@ fonts_dir             = "../fonts"
 
 
 # =================================
-# You shouldn't need to directives below.
+# Environment Settings.
 # =================================
+# You are probably not going to need to change the settings below.
+# If you wish to debug your styles, you should run compass with the
+# command "-e development".
 
 # Development configs.
-if environment.nil? || environment == :production
+if environment == :development
 
-  output_style  = :compressed
-  line_comments = true
-  debug_info    = true
+  output_style      = :expanded
+  line_comments     = true
+  debug             = true
 
-# Non Development (e.g. QA, stage, production, ...)configs.
+# Production configs.
 else
 
-  output_style  = :expanded
-  line_comments = false
-  debug_info    = false
+  output_style      = :compressed
+  line_comments     = false
+  debug             = false
 
 end
 
 # Pass environment dependant options to sass.
 sass_options = {
-  :debug_info => debug_info
+  :debug_info => debug,
+  :sourcemap => debug
 }

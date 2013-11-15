@@ -33,7 +33,7 @@ This structure is an extension of the one proposed on http://thesassway.com/begi
         |-- extensions/                   # For local compass extensions. Please, refeer to http://compass-style.org/help/tutorials/extensions/
         |-- src/
             |
-            |-- lib/                      # Sass logic only files (sass that doens't create css output).
+            |-- dev/                      # Sass logic only files (sass that doens't create css output).
             |   |-- _fonts.sass           # Suggestion for a module.
             |   |-- _colors.sass          # Suggestion for a module.
             |   |-- _sprites.sass         # Suggestion for a module.
@@ -50,7 +50,7 @@ This structure is an extension of the one proposed on http://thesassway.com/begi
             |   |-- _forms.sass           # Sugestion for a partial.
             |   |-- _navigation.sass      # Etc.
             |   
-            |-- vendor/                   # CSS or Sass from other projects.
+            |-- vendor/                   # CSS or Sass from vendors.
             |   |-- _compass.sass         # Compass SASS framework
             |   |-- _jquery.ui.core.css   # Sugestion for a vendor.
             |   |-- _bootstrap.scss       # Etc.
