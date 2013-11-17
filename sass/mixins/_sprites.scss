@@ -1,0 +1,30 @@
+/*
+|------------------------------------------------------------------------------
+| Custom Sprite Mixins
+|------------------------------------------------------------------------------
+*/
+
+
+
+/*
+|----------------------------------------------------------
+| Compass "sprites" mixin overwrite
+|----------------------------------------------------------
+| This mixin is an overwritted version of one found at the
+| Compass' base sprites mixin partial. It is been used as
+| part of the solution to transform the sprite selectors
+| into placeholder selectors, so that the sprites partial
+| can be a non-emitting one.
+| 
+| Read the sass/def/_sprites.sass to fully understand this
+| issue.
+*/
+
+@mixin sprites($map, $sprite-names, $base-class: false, $dimensions: false, $prefix: sprite-map-name($map), $offset-x: 0, $offset-y: 0) {
+  @each $sprite-name in $sprite-names {
+    @if sprite_does_not_have_parent($map, $sprite-name) {
+      $full-sprite-name: "#{$prefix}-#{$sprite-name}";
+      %#{$full-sprite-name} {
+        @if $base-class {
+          @extend #{$base-class}; }
+        @include sprite($map, $sprite-name, $dimensions, $offset-x, $offset-y); } } } }

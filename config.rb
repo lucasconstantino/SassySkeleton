@@ -19,7 +19,7 @@ preferred_syntax = :sass
 # Directory Structure
 #======================================
 
-# Set usage of relative paths (as opposed to absolute path).
+# Set usage of relative paths for the settings below.
 relative_assets = true
 
 # Path locations.
@@ -41,7 +41,7 @@ generated_images_dir  = "../images/sprites" # - Where compass will place the
                                             #   sprite source (i.e. sprite
                                             #   directory) will show here as one
                                             #   image.
-sprite_load_path      = "../images-source"  # - The source for the sprite images.
+sprite_load_path      = "images-source"     # - The source for the sprites. images.
                                             #   Each directory inside this will
                                             #   be then generated as a sprite.
 fonts_dir             = "../fonts"          # - The directory where the font

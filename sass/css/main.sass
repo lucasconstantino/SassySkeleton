@@ -1,12 +1,15 @@
 /*
 |------------------------------------------------------------------------------
-| Global Styles
+| Main Styles
 |------------------------------------------------------------------------------
-|
 | Use this file to compile globally used styles (E.g.: structure, default
-| listing style, default anchors, etc.). Aside this file you can have other
-| files for more specific contexts like header, footer, admin, print, etc.
+| listing style, default anchors, etc.).
+| 
+| Aside this file you can have other files for more specific contexts like 
+| header, footer, admin, print, section, etc.
 */
+
+
 
 // ------------------------------------
 // Import base framework.
@@ -19,12 +22,12 @@
 // Import outputing vendors.
 // ------------------------------------
 
-@import compass/reset
+@import vendors/normalize
 
 
 // ------------------------------------
-// Import global partials.
+// Import source partials.
 // ------------------------------------
 
-@import partials/default
-@import partials/shame
+@import sources/default
+@import sources/shame

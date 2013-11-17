@@ -1,3 +1,4 @@
+
 # Compass Boilerplate
 **A bootstrap for better structured styles based on sass/compass.**
 
@@ -12,6 +13,13 @@ Clone this repository as the stylesheet directory of your project. For a shortcu
     $ git clone https://github.com/lucascsilva/compass-boilerplate.git compass
 
 Read the config.rb file to adapt compass to your use case.
+
+Keep in mind that **if using a revision control system**, you should probably add the following to your ignores:
+
+    *.css
+    */images/sprites/*
+
+This would avoid revisioning compiled CSS and generated sprites.
 
 
 ## Directory layout
