@@ -23,13 +23,10 @@ preferred_syntax = :sass
 relative_assets = true
 
 # Path locations.
-http_path             = "/compass/"         # - Should point to the location of
-                                            #   this current file from the base
-                                            #   path of the server.
 sass_dir              = "sass"              # - The directory where to look for
                                             #   generating stylesheets.
 extensions_dir        = "extensions"        # - The directory for sass plugins.
-css_dir               = "../"               # - The path for placing compiled
+css_dir               = "../css"            # - The path for placing compiled
                                             #   CSS. Note that this path points
                                             #   one directory above the current
                                             #   directory.
@@ -41,13 +38,13 @@ generated_images_dir  = "../images/sprites" # - Where compass will place the
                                             #   sprite source (i.e. sprite
                                             #   directory) will show here as one
                                             #   image.
-sprite_load_path      = "images-source"     # - The source for the sprites. images.
+sprite_load_path      = "sprites"           # - The source for the sprites. images.
                                             #   Each directory inside this will
                                             #   be then generated as a sprite.
 fonts_dir             = "../fonts"          # - The directory where the font
                                             #   files are kept.
 
-# Adds the partials path to the possible import origins.
+# Add the partials path to the possible import origins.
 add_import_path "partials"
 
 
