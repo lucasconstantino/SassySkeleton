@@ -23,7 +23,7 @@ preferred_syntax = :sass
 relative_assets = true
 
 # Path locations.
-sass_dir              = "sass"              # - The directory where to look for
+sass_dir              = "src"               # - The directory where to look for
                                             #   generating stylesheets.
 extensions_dir        = "extensions"        # - The directory for sass plugins.
 css_dir               = "../css"            # - The path for placing compiled
