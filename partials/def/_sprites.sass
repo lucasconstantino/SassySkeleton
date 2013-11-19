@@ -1,96 +1,96 @@
 /*
-|------------------------------------------------------------------------------
-| Sprite Definitions
-|------------------------------------------------------------------------------
-| Use this file to set sprites and related variables or functions.
-| 
-| To fully understand how this file works, you should be familiar with the 
-| concepts of compass sprite generation and magic imports. To read more on 
-| that, please refeer to http://compass-style.org/help/tutorials/spriting/ and 
-| the sections listed above in that page. Also, it will be good to have an
-| understading of Sass placeholders. For that, there is a great article too:
-| http://blog.teamtreehouse.com/extending-placeholder-selectors-with-sass.
-*/
+ *------------------------------------------------------------------------------
+ * Sprite Definitions
+ *------------------------------------------------------------------------------
+ * Use this file to set sprites and related variables or functions.
+ * 
+ * To fully understand how this file works, you should be familiar with the 
+ * concepts of compass sprite generation and magic imports. To read more on 
+ * that, please refeer to http://compass-style.org/help/tutorials/spriting/ and 
+ * the sections listed above in that page. Also, it will be good to have an
+ * understading of Sass placeholders. For that, there is a great article too:
+ * http://blog.teamtreehouse.com/extending-placeholder-selectors-with-sass.
+ */
 
 
 
 /*
-|----------------------------------------------------------
-| By defaut, using compass' magic imports for sprites will
-| generate class selectors, that can then be extend in
-| order to apply the background image to another selector.
-| The problem here is that each time you import this file
-| to a compiling stylesheet, all the sprite selectors will
-| be output without you probably using them. To solve this
-| problem there should be a way to import sprite selectors
-| as placeholders, so that no style selector will be output
-| unless you acctually extend them.
-| 
-| There is an issue on Compass detailing this problem:
-| https://github.com/chriseppstein/compass/issues/1005
-| 
-| The solution written is this document was proposed to the
-| issue above, as well as better documented in this post at
-| CoderWall: https://coderwall.com/p/si0rlq.
-| 
-| Following below are the steps needed to solve this issue.
-| Keep in mind that you don't necessarilly have to
-| understand this in order to make use of compass sprites,
-| as long as you keep "imports" and "includes" in the
-| places suggested below.
-| 
-|----------------------------------------------------------
-| 1) - Define base selectors:
-|----------------------------------------------------------
-| Defining placeholder bases selectors for each sprite in
-| use will make sure the main sprite selectors, where
-| compass sets the background-image attributes, won't be
-| output. The exemple shown below is for a "icons" sprite.
-*/
+ *----------------------------------------------------------
+ * By defaut, using compass' magic imports for sprites will
+ * generate class selectors, that can then be extend in
+ * order to apply the background image to another selector.
+ * The problem here is that each time you import this file
+ * to a compiling stylesheet, all the sprite selectors will
+ * be output without you probably using them. To solve this
+ * problem there should be a way to import sprite selectors
+ * as placeholders, so that no style selector will be output
+ * unless you acctually extend them.
+ * 
+ * There is an issue on Compass detailing this problem:
+ * https://github.com/chriseppstein/compass/issues/1005
+ * 
+ * The solution written is this document was proposed to the
+ * issue above, as well as better documented in this post at
+ * CoderWall: https://coderwall.com/p/si0rlq.
+ * 
+ * Following below are the steps needed to solve this issue.
+ * Keep in mind that you don't necessarilly have to
+ * understand this in order to make use of compass sprites,
+ * as long as you keep "imports" and "includes" in the
+ * places suggested below.
+ * 
+ *----------------------------------------------------------
+ * 1) - Define base selectors:
+ *----------------------------------------------------------
+ * Defining placeholder bases selectors for each sprite in
+ * use will make sure the main sprite selectors, where
+ * compass sets the background-image attributes, won't be
+ * output. The exemple shown below is for a "icons" sprite.
+ */
 
 // $icons-sprite-base-class: "%icons-sprite"
 
 /*
-|----------------------------------------------------------
-| 2) - Import and compile images:
-|----------------------------------------------------------
-| This is the step that acctually tells Compass to compile
-| the images under a directory into a sprite. Usually,
-| this would generate and output a class selector like
-| ".icons-sprite", in our exemple.
-*/
+ *----------------------------------------------------------
+ * 2) - Import and compile images:
+ *----------------------------------------------------------
+ * This is the step that acctually tells Compass to compile
+ * the images under a directory into a sprite. Usually,
+ * this would generate and output a class selector like
+ * ".icons-sprite", in our exemple.
+ */
 
 // @import "icons/*.png"
 
 /*
-|----------------------------------------------------------
-| 3) - Include custom sprite mixin
-|----------------------------------------------------------
-| Each import as the one made above, will load a "magic"
-| Sass partial, containing all the sprite selectors AND
-| some mixins for common sprite usage. These mixins have to
-| be overwritten in order for them to use placeholder based
-| classes for each image selector. We only keep this mixins
-| in another file and on another partial category directory
-| to keep things in order.
-*/
+ *----------------------------------------------------------
+ * 3) - Include custom sprite mixin
+ *----------------------------------------------------------
+ * Each import as the one made above, will load a "magic"
+ * Sass partial, containing all the sprite selectors AND
+ * some mixins for common sprite usage. These mixins have to
+ * be overwritten in order for them to use placeholder based
+ * classes for each image selector. We only keep this mixins
+ * in another file and on another partial category directory
+ * to keep things in order.
+ */
 
 @import mixins/sprites
 
 /*
-|----------------------------------------------------------
-| 4) - Include sprites
-|----------------------------------------------------------
-| There are many ways to include sprites. One of them is to
-| use the dynamic mixin "+all-[SPRITE-NAME]-sprite", created
-| for each imported sprite, to include selectors for all
-| the images contained in a sprite. Usually these selectors
-| would be normal classes; due to the mixin imported above,
-| they are now placeholders. As they are now placeholder,
-| there will be no harm on including them all here, so that
-| to use the sprites the only thing I have to do is to
-| extend these selectors, with no need to include any other
-| mixin on my own selectors.
-*/
+ *----------------------------------------------------------
+ * 4) - Include sprites
+ *----------------------------------------------------------
+ * There are many ways to include sprites. One of them is to
+ * use the dynamic mixin "+all-[SPRITE-NAME]-sprite", created
+ * for each imported sprite, to include selectors for all
+ * the images contained in a sprite. Usually these selectors
+ * would be normal classes; due to the mixin imported above,
+ * they are now placeholders. As they are now placeholder,
+ * there will be no harm on including them all here, so that
+ * to use the sprites the only thing I have to do is to
+ * extend these selectors, with no need to include any other
+ * mixin on my own selectors.
+ */
 
 // +all-icons-sprites(true)
