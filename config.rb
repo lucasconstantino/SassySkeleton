@@ -26,8 +26,8 @@ relative_assets = true
 http_path             = "/compass/"         # - Should point to the location of
                                             #   this current file from the base
                                             #   path of the server.
-sass_dir              = "src"               # - The directory where to look for
-                                            #   partials.
+sass_dir              = "sass"              # - The directory where to look for
+                                            #   generating stylesheets.
 extensions_dir        = "extensions"        # - The directory for sass plugins.
 css_dir               = "../"               # - The path for placing compiled
                                             #   CSS. Note that this path points
@@ -47,6 +47,8 @@ sprite_load_path      = "images-source"     # - The source for the sprites. imag
 fonts_dir             = "../fonts"          # - The directory where the font
                                             #   files are kept.
 
+# Adds the partials path to the possible import origins.
+add_import_path "partials"
 
 
 # =================================
