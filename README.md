@@ -27,18 +27,18 @@ This would avoid revisioning compiled CSS and generated sprites.
 The structure presented below is a proposal for the structure of a webapp. While this project only brings structure to the stylesheet directory, we decided to show it on the scope where it could be used to make it easier to understand where to place our files.
 This structure is an extension of the one proposed on http://thesassway.com/beginner/how-to-structure-a-sass-project.
 
-    app/
+    root/
     |
     |-- css/                              # For compiled css only.
     |-- fonts/                            # For font files.
-    |-- images/                           # For non-sprite images.
+    |-- images/                           # For all images.
     |   |-- sprites/                      # For compiled sprite images only.
     |   
     |-- images-source/                    # For sprite source images.
     |-- scripts/
-    `-- compass/                          # For all source sass files.
+    `-- sass/                             # For all non-compiled source.
+        |-- extensions/                   # For local compass extensions.
         |-- config.rb                     # Compass configuration file.
-        |-- extensions/                   # For local compass extensions. Please, refeer to http://compass-style.org/help/tutorials/extensions/
         |-- src/
             |
             |-- dev/                      # Sass logic only files (sass that doens't create css output).
@@ -61,7 +61,7 @@ This structure is an extension of the one proposed on http://thesassway.com/begi
             |-- vendor/                   # CSS or Sass from vendors.
             |   |-- _compass.sass         # Compass SASS framework
             |   |-- _jquery.ui.core.css   # Sugestion for a vendor.
-            |   |-- _bootstrap.scss       # Etc.
+            |   |-- _bootstrap.csss       # Etc.
             |
             |-- _base.sass                # Import global needs for the partials.
             |-- global.sass               # Global sass compilation.

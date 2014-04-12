@@ -23,7 +23,7 @@ preferred_syntax = :sass
 relative_assets = true
 
 # Path locations.
-sass_dir              = "src"               # - The directory where to look for
+sass_dir              = "source"            # - The directory where to look for
                                             #   generating stylesheets.
 extensions_dir        = "extensions"        # - The directory for sass plugins.
 css_dir               = "../css"            # - The path for placing compiled
@@ -45,6 +45,7 @@ fonts_dir             = "../fonts"          # - The directory where the font
                                             #   files are kept.
 
 # Add the partials path to the possible import origins.
+add_import_path "library"
 add_import_path "partials"
 
 

@@ -1,6 +1,5 @@
-/*
- *------------------------------------------------------------------------------
- * Core Requirements Loader
+/*------------------------------------------------------------------------------
+ * Library Requirements Loader
  *------------------------------------------------------------------------------
  *
  * Use this file to set all global requirements.
@@ -19,25 +18,25 @@
 // Vendors (non-outputing only)
 // ------------------------------------
 
-@import vendors/core
+@import "vendors/**/*"
 
 
 // ------------------------------------
-// Library
+// Settings
 // ------------------------------------
 
-@import def/core
+@import "settings/**/*"
 
 
 // ------------------------------------
 // Mixins
 // ------------------------------------
 
-@import mixins/core
+@import "mixins/**/*"
 
 
 // ------------------------------------
-// Modules
+// Components
 // ------------------------------------
 
-@import modules/core
+@import "components/**/*"
