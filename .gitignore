@@ -1,2 +1,5 @@
+# Ignore extensions
+extensions/
+
 # Ignore caching
 .sass-cache/
