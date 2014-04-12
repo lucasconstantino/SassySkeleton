@@ -25,7 +25,6 @@ relative_assets = true
 # Path locations.
 sass_dir              = "source"            # - The directory where to look for
                                             #   generating stylesheets.
-extensions_dir        = "extensions"        # - The directory for sass plugins.
 css_dir               = "../css"            # - The path for placing compiled
                                             #   CSS. Note that this path points
                                             #   one directory above the current
@@ -55,10 +54,10 @@ add_import_path "partials"
 
 # Add importing paths to use vendor's partials that reside outside
 # this directory.
-# add_import_path '../../FOO/BAR'
+# add_import_path '../../path/to/other/project'
 
 # Require any additional compass plugins.
-# require 'ninesixty'
+# require 'sass-globbing'
 
 
 
