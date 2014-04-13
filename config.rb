@@ -57,7 +57,7 @@ add_import_path "partials"
 # add_import_path '../../path/to/other/project'
 
 # Require any additional compass plugins available globally.
-# require 'blueprint'
+require 'sass-globbing'
 
 
 
