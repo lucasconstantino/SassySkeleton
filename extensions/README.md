@@ -29,14 +29,23 @@ Ad-hoc extensions are at last the ones that should reside in the *extensions* di
 **This kind of extension, as I said, don't have to be explicitly required in the *config.rb***.
 
 
+## About Sache
+
+Finding good Sass/Compass extensions was once a hard job. Not anymore. Now you can easily discover new ones visiting [Sache](http://www.sache.in), an amazing project listing tool!
+
+
 ## Further reading
 
 There are some articles about extending Sass/Compass that you might like to follow. Here is a small list of the ones I read to prepare this documentation:
 
 - [Managing Compass Extensions with Bundler](http://atendesigngroup.com/blog/managing-compass-extensions-bundler);
+- [Compass Extensions](http://compass-style.org/help/tutorials/extensions/);
+- [Compass Extensions are Easy](http://chriseppstein.github.io/blog/2010/10/21/compass-extensions-are-easy/).
+
+
+### Bower is lovely
+
+I find Bower the best package manager for the web, and I simply love the way it handles dependencies. If you are like me and would like to find a way to use Bower as a extensions manager for this skeleton, you're welcome to read the following articles and try what best suits your use case:
+
 - [Bower all the things](https://www.codefellows.org/blogs/bower-all-the-things);
-- [Using Bower with Compass](https://coderwall.com/p/bhb0pq)
-
-## About Sache
-
-Finding good Sass/Compass extensions was once difficult. Not anymore. You can easily discover new ones visiting [Sache](http://www.sache.in).
+- [Using Bower with Compass](https://coderwall.com/p/bhb0pq).
