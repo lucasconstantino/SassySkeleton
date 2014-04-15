@@ -3,7 +3,7 @@
 
 This directory is where you should put the files Compass should compile.
 
-Each file in this directory - save the ones you might put and "_" prefix on - will generate a compiled file at the CSS directory on level above this skeleton's root.
+Each file in this directory - save the ones you might put and "_" prefix on - will generate a compiled file at the CSS directory, one level this skeleton's root.
 
 
 ## File contents
