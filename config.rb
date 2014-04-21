@@ -37,7 +37,7 @@ generated_images_dir  = "../images/sprites" # - Where compass will place the
                                             #   sprite source (i.e. sprite
                                             #   directory) will show here as one
                                             #   image.
-sprite_load_path      = "sprites"           # - The source for the sprites. images.
+sprite_load_path      = "library/sprites"   # - The source for the sprites. images.
                                             #   Each directory inside this will
                                             #   be then generated as a sprite.
 fonts_dir             = "../fonts"          # - The directory where the font
