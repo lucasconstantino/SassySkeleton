@@ -24,7 +24,9 @@ Please, if you don't know Bundler package manager (and I have to say I didn't, b
 
 ### Installing Ad-hoc extensions
 
-Ad-hoc extensions are at last the ones that should reside in the *extensions* directory. They are something Compass understand, and for that Compass will simply lookup this directory and load the extensions automatically, so all you have to do is `@import` them in your *sass* files, probably inside the library/vendor directory.
+Ad-hoc extensions are at last the ones that should reside in the *extensions* directory. They are something Compass understand, and for that Compass will simply lookup this directory and load the extensions automatically, so all you have to do is `@import` them in your *sass* files.
+
+If an `@import` statement for a vendor should generate CSS (e.g. [normalize](https://github.com/ksmandersen/compass-normalize)), you should write it in a [source](../source) file. Otherwise, if they don't output CSS you might want to include it at the *[vendor.sass](../library/settings/vendor.sass)* file, for this way all partials can benefit from the extension.
 
 **This kind of extension, as I said, don't have to be explicitly required in the *config.rb***.
 

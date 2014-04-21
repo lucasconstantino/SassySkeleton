@@ -11,10 +11,10 @@ Each file in this directory - save the ones you might put and "_" prefix on - wi
 The files in this directory should contain:
 
 - Optional import to the **[library](../library/library.sass)** file;
-- Optional import to **[outputting vendors](../partials/vendor)** (normalize, 960gs, whatever);
+- Optional import to **outputting vendors** (normalize, 960gs, whatever);
 - Optional imports to each **[partial](../partials)** this file should embrace.
 
-Although not mandatory, the first item - the library - is probably going to be a dependency for your partials. If this is not true, then you might not be using this architecture correctly.
+Although not mandatory, the first item - the library (mostly it's components) - is probably going to be a dependency for your partials. If this is not true, then you might not be using this architecture correctly.
 
 The second and third items are also not mandatory, but as the importation of the library should not output CSS code, it is obvious that you will need to import some file from one or the other - or sometimes from both.
 

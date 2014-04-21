@@ -35,15 +35,6 @@ Our partials will then `@extend` our components using semantic selectors to crea
 **P.s.: Although I really appreciate the extend functionality, it can get a little (DRY but) messy compiled CSS. To avoid any gotchas, please have a read on [Hugo Giraudel's article about @extend](http://www.sitepoint.com/sass-extend-nobody-told-you).**
 
 
-## Vendors
+### Sprites
 
-There are two places for vendors in our structure: one is at the
-*partials/vendor* directory; The other one is at the *library/vendor*. This might seem a little confusing at first, but this division is made so you can basically separate emitting vendors from non-emitting ones. As the library, when imported, should output no CSS on it's own, so should not it's vendors.
-
-##### Commonly used non-emitting vendors:
-
-- [Compass CSS3 helper mixins](http://compass-style.org/reference/compass/css3).
-
-##### Commonly user emitting vendors:
-
-- [Sass port for Normalize](https://github.com/JohnAlbin/normalize-scss). 
+Please, refer to the [sprites documentation](sprites/README.md) for it is pretty complete.
