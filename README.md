@@ -1,6 +1,6 @@
 
-# Compass Boilerplate
-**A bootstrap for better structured styles based on sass/compass.**
+# SassySkeleton
+**A boilerplate for better structured styles based on sass/compass.**
 
 This project is a structure suggestion for scalable stylesheets.
 
