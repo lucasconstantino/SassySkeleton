@@ -4,9 +4,11 @@
  * Use this file to compile globally used styles (E.g.: normalize, structure,
  * default tags styling, etc.).
  * 
- * Don't use this file as the only stylesheet generator. You should have as many
- * stylesheet aside this, so that on each page you will serve the user only the
- * ones needed.
+ * P.s.: you probably should have only one stylesheet in your application, so
+ * that you could avoid sending all your styles to the client when you are
+ * acctually using only a part of them in a state/page. To more stylesheets with
+ * different partials, just clone this file and change the @imported extensions
+ * and partials as needed.
  */
 
 
@@ -19,14 +21,14 @@
 
 
 // ------------------------------------
-// Import outputing vendors.
+// Import outputing extensions.
 // ------------------------------------
 
 // @import normalize
 
 
 // ------------------------------------
-// Import parts.
+// Import partials.
 // ------------------------------------
 
 @import shame
