@@ -23,25 +23,27 @@ preferred_syntax = :sass
 relative_assets = true
 
 # Path locations.
-sass_dir              = "source"            # - The directory where to look for
-                                            #   generating stylesheets.
-css_dir               = "../css"            # - The path for placing compiled
-                                            #   CSS. Note that this path points
-                                            #   one directory above the current
-                                            #   directory.
-images_dir            = "../images"         # - The place Compass will look for
-                                            #   images when images are required
-                                            #   via the "image" function.
-generated_images_dir  = "../images/sprites" # - Where compass will place the
-                                            #   generated sprites. Note that each
-                                            #   sprite source (i.e. sprite
-                                            #   directory) will show here as one
-                                            #   image.
-sprite_load_path      = "library/sprites"   # - The source for the sprites. images.
-                                            #   Each directory inside this will
-                                            #   be then generated as a sprite.
-fonts_dir             = "../fonts"          # - The directory where the font
-                                            #   files are kept.
+sass_dir              = "source"              # - The directory where to look for
+                                              #   generating stylesheets.
+css_dir               = "../css"              # - The path for placing compiled
+                                              #   CSS. Note that this path points
+                                              #   one directory above the current
+                                              #   directory.
+images_dir            = "../images"           # - The place Compass will look for
+                                              #   images when images are required
+                                              #   via the "image" function.
+generated_images_dir  = "../images/sprites"   # - Where compass will place the
+                                              #   generated sprites. Note that each
+                                              #   sprite source (i.e. sprite
+                                              #   directory) will show here as one
+                                              #   image.
+extensions_dir        = "library/extensions"  # - The path to lookup for sass/compass
+                                              #   Ad-hoc extensions.
+sprite_load_path      = "library/sprites"     # - The source for the sprites. images.
+                                              #   Each directory inside this will
+                                              #   be then generated as a sprite.
+fonts_dir             = "../fonts"            # - The directory where the font
+                                              #   files are kept.
 
 # Add the partials path to the possible import origins.
 add_import_path "library"
