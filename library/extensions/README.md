@@ -10,7 +10,7 @@ Basically, there are two kinds of *extensions* that can be used by Sass/Compass:
 - RubyGems;
 - Ad-hoc Compass extensions.
 
-The first is pretty straight forward for Ruby users: you can install them by running `gem install` and use it in your project by requiring it in your *config.rb*.
+The first is pretty straight forward for Ruby users: you can install them gems by running `gem install` and import them to your files by requiring them at your *config.rb*.
 
 The second is something purely managed by Compass, and we will talk about it below.
 
@@ -24,9 +24,9 @@ Please, if you don't know Bundler package manager (and I have to say I didn't, b
 
 ### Installing Ad-hoc extensions
 
-Ad-hoc extensions are at last the ones that should reside in the *extensions* directory. They are something Compass understand, and for that Compass will simply lookup this directory and load the extensions automatically, so all you have to do is `@import` them in your *sass* files.
+Ad-hoc extensions are at last the ones that should reside in the *extensions* directory (here). They are something Compass understand, and for that Compass will simply lookup this directory and load the extensions automatically, so all you have to do is `@import` them in your *sass* files.
 
-If an `@import` statement for a vendor should generate CSS (e.g. [normalize](https://github.com/ksmandersen/compass-normalize)), you should write it in a [source](../source) file. Otherwise, if they don't output CSS you might want to include it at the *[vendor.sass](../library/settings/vendor.sass)* file, for this way all partials can benefit from the extension.
+If an `@import` statement for a vendor extension should generate CSS (e.g. [normalize](https://github.com/ksmandersen/compass-normalize)), you should write it in a [source](../source) file. Otherwise, if they don't output CSS you might want to include it at the *[extensions.sass](../library/settings/vendor.sass)* file, for this way all partials can benefit from the extension.
 
 **This kind of extension, as I said, don't have to be explicitly required in the *config.rb***.
 
