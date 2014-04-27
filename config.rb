@@ -86,8 +86,10 @@ else
 
 end
 
+# Sourcemap is only available above Sass 3.3.x and Compass 1.x
+sourcemap = debug
+
 # Pass environment dependant options to sass.
 sass_options = {
-  :debug_info => debug,
-  :sourcemap => debug
+  :debug_info => debug
 }
