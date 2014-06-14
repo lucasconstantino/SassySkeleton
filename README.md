@@ -1,3 +1,6 @@
+***This README file is mostly outdated. The READMEs under the directories, however, a pretty up-to-date, so I would recommend you follow the guides in those files insted of this main one for now***
+
+------------
 
 # SassySkeleton
 **A boilerplate for better structured styles based on sass/compass.**
