@@ -2,7 +2,7 @@
 
 [![Sass v3.3.x](http://img.shields.io/badge/Sass-3.3.x-ff69b4.svg)](https://github.com/sass/sass) [![Compass v1.0.0.alpha.19](http://img.shields.io/badge/Compass-1.0.0.alpha.19-red.svg)](https://github.com/chriseppstein/compass) [![Sass Globbing v1.1.0](http://img.shields.io/badge/Sass Globbing-1.1.0-ff69b4.svg)](https://github.com/chriseppstein/sass-globbing)
 
-> A boilerplate for better structured styles based on sass/compass.
+> A boilerplate for better structured styles based on Sass & Compass.
 
 This project is a structure suggestion for scalable stylesheet development.
 

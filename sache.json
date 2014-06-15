@@ -1,0 +1,10 @@
+{
+  "name": "SassySkeleton",
+  "author": {
+    "name": "Lucas Constantino Silva",
+    "email": "lucasconstantinosilva@gmail.com",
+    "url": "https://github.com/lucasconstantino"
+  },
+  "description": "A boilerplate for better structured styles based on Sass & Compass.",
+  "tags": ["structure", "boilerplate", "skeleton"]
+}
