@@ -68,3 +68,26 @@ Here is where the bond between the library and your CSS selectors should occur. 
 #### Sources
 
 In the *partials* directory, you will have many component-specific files. In the *source* directory, you will have one or more context specific stylesheet generators, a.k.a Sass compiling files. Usually, you use "*_*" (underline) preceding your file names to avoid it beeing compiled by Sass. As we divide all our files in multiple directories, using [Compass' *add_import_path*](http://compass-style.org/help/tutorials/configuration-reference/) to have them all available, we should probably have only the files that should be compiled in this directory. These files will consist of the import of the hole library files (using ```@import library``` statement) and the import of some partial files that "fulfill" the styles for the context where the compiled file will be used.
+
+## License
+
+Copyright (c) 2014 Lucas Constantino Silva.
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
