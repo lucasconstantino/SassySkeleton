@@ -51,9 +51,9 @@ The importance of this project is mostly within it's directory layout. Because o
 
 Nevertheless, what is important explain is the main structure division. It consists of the separation of your code in the three main directories:
 
-* *library*
-* *partials*
-* *source*
+* */library*
+* */partials*
+* */source*
 
 #### Library
 
