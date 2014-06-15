@@ -51,9 +51,9 @@ The importance of this project is mostly within it's directory layout. Because o
 
 Nevertheless, what is important explain is the main structure division. It consists of the separation of your code in the three main directories:
 
-* [*/library*](https://github.com/lucasconstantino/SassySkeleton/tree/master/library)
-* [*/partials*](https://github.com/lucasconstantino/SassySkeleton/tree/master/partials)
-* [*/source*](https://github.com/lucasconstantino/SassySkeleton/tree/master/source)
+* [*/library*](library)
+* [*/partials*](partials)
+* [*/source*](source)
 
 #### Library
 
