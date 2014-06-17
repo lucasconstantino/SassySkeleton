@@ -1,7 +1,7 @@
 
 # Partials
 
-Partials will hold files divided, mostly, but context or similarity of application. E.g.: you should definitely have a partial called *login.sass*. You shouldn't, thought, have a partial called *buttons.sass*; that should be created as a non-emitting reusable [component](../library/components).
+Partials will hold files divided (mostly) by context or similarity on the application. E.g.: you should definitely have a partial called *login.sass*. You shouldn't, thought, have a partial called *buttons.sass*; that should be created as a non-emitting reusable [component](../library/components).
 
 In an ideal scenario, your partials should be very clean and small. They should consist mostly of selectors that extend *placeholders* or include *mixins*, having little to no CSS adjustment.
 
