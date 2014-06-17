@@ -23,7 +23,7 @@ For command line users, I recommend your clone this repository to a directory in
 
     $ git clone https://github.com/lucasconstantino/SassySkeleton.git sass
 
-If you are versioning your project, don't forget to remove the *sass/.git* directory, as it would leed to Git not watching your changes. You can do so by running the following command from your project's root:
+If you are versioning your project, don't forget to remove the *sass/.git* directory, as it would lead Git not to see changes on Sass files as part of your project. You can do so by running the following command from your project's root:
 
     $ rm -Rf sass/.git
 
