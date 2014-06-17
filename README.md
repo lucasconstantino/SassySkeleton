@@ -31,9 +31,9 @@ If you are versioning your project, don't forget to remove the *sass/.git* direc
 
 ### Configuration
 
-Now, read the *config.rb* file inside the *sass* directory (or whatever you called it; I'll just keep calling it this way so to easy your understanding) to adapt compass to your use case. This file contains path suggestion that match directories expected to be outside of the *sass* directory, so it is probable that you'll need to change one or two to match your project structure.
+Go on and read the *config.rb* file to adapt Compass to your use case. This file contains path suggestion that match directories expected to be outside of the *sass* directory, so it is probable that you'll need to change one or two to match your project's structure.
 
-Keep in mind that **if using a revision control system**, you should probably add the compiling destination directory (defaulting to *../css* from *sass*) and the sprites generating destination to your ignored files. Using Git - and provided you keep the *config.rb* with it's defaults - that would mean creating a *.gitignore* file in your project with the following content:
+Keep in mind that **if using a version control system**, you should probably add the compiling destination directory (defaults to *../css*) and the sprites generating destination, if using sprites, to your ignored files. Using Git - and provided you keep the *config.rb* with it's defaults - that would mean creating a *.gitignore* file in your project root with the following content:
 
     */css/*
     */images/sprites/*
@@ -46,14 +46,14 @@ This structure depends on three gems on specific versions to work:
 * Compass *>= v1.0.0.alpha.19*
 * Sass Globbing *>= 1.1.0*
 
-To install a specific version of a gem you can use ```gem install [gem] -v [version]```. However, I recommend you use [Bundler](http://bundler.io/) for the task. All you would have to do is run ```bundle install``` inside the *sass* directory to install the necessary gems. After that, if you have these gems with other versions for other projects, you would have to run Compass using the commands preceded by ```bundle exec```, like ```bundle exec compass compile``` or ```bundle exec compass watch -e development```.
+To install a specific version of a gem you can use ```gem install [gem] -v [version]```. However, I recommend you use [Bundler](http://bundler.io/) for the task. After installing it, all you would have to do is run ```bundle install``` inside *sass* directory (or whatever you called it) to install the necessary gems. After that, if you have these gems with other versions for other projects, you would have to run Compass using the commands preceded by ```bundle exec```, like ```bundle exec compass compile``` or ```bundle exec compass watch -e development```.
 
 
 ## Directory layout
 
-The importance of this project is mostly within it's directory layout. Because of that, most of the documentation on how to use the directories and where exactly to put your code will be found inside each directory or even as comments in the files.
+The relevance of this project relies most upon it's directory layout. Because of that, most of the documentation on how to use the directories and where exactly to put your code will be found inside each directory or even as inline comments on the files.
 
-Nevertheless, what is important explain is the main structure division. It consists of the separation of your code in the three main directories:
+Nevertheless, what is important to explain here is the main structure division. It consists of the separation of your code on three main concepts:
 
 * [*/library*](library)
 * [*/partials*](partials)
@@ -61,17 +61,20 @@ Nevertheless, what is important explain is the main structure division. It consi
 
 #### Library
 
-This is were most of the code should reside. However, **no file in this directory should output CSS**. It is consisted only of variables, functions, mixins or [silent classes (placeholders)](http://thesassway.com/intermediate/understanding-placeholder-selectors).
+This is were most of the code should reside. However, **no file in this directory should output CSS**. It should consist only of variables, functions, mixins or [silent classes (placeholders)](http://thesassway.com/intermediate/understanding-placeholder-selectors).
 
 #### Partials
 
-Here is where the bond between the library and your CSS selectors should occur. Most of the code here will be the usage of mixins or extension of placeholders by the project's semantic CSS selectors.
+Here is where the bond between the library and your CSS selectors should occur. Most of the code here will consist of the usage of mixins or placeholders by semantic CSS selectors.
 
-> Although that's the premise, I have to confess it's no easy job to keep most of CSS out of this directory, but the advantage of styling this way is that everything that's created inside the library as non-emitting CSS can be reused across all your styles, keeping your code both DRY and easy to maintain.
+> Although that's the goal, I have to confess it's no easy job to keep style definitions out of this directory, but the advantage of styling this way is that everything that's created inside the library as non-emitting CSS can be reused across all your elements, keeping your code both DRY and easy to maintain.
 
 #### Sources
 
-In the *partials* directory, you will have many component-specific files. In the *source* directory, you will have one or more context specific stylesheet generators, a.k.a Sass compiling files. Usually, you use "*_*" (underline) preceding your file names to avoid it beeing compiled by Sass. As we divide all our files in multiple directories, using [Compass' *add_import_path*](http://compass-style.org/help/tutorials/configuration-reference/) to have them all available, we should probably have only the files that should be compiled in this directory. These files will consist of the import of the hole library files (using ```@import library``` statement) and the import of some partial files that "fulfill" the styles for the context where the compiled file will be used.
+In the *partials* directory, you will have many element specific files. In the *source* directory, you will have one or more context specific stylesheet generators, a.k.a Sass compiling files. These files will consist of the import of the hole library files (using ```@import library``` statement) and the import of some partial files that "fulfill" the styles for the context where the compiled file will be used.
+
+
+> Usually with Sass we use "_" (underline) preceding your file names to avoid them from beeing compiled by Sass, what makes them *partials*. In this structure, as we divide all our files in multiple directories and use [Compass' *add_import_path*](http://compass-style.org/help/tutorials/configuration-reference/) to have them all available, only the *sources* directory will be watched against changes and get compiled, so the files on the other directories don't have to use the underline naming to be ignored.
 
 ## License
 
