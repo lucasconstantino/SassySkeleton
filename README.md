@@ -36,9 +36,9 @@ Keep in mind that **if using a revision control system**, you should probably ad
     */css/*
     */images/sprites/*
 
-### Dependency Gems
+### Dependencies
 
-This structure depends on three gems with specific versions to work:
+This structure depends on three gems on specific versions to work:
 
 * Sass *>= v3.3.0*
 * Compass *>= v1.0.0.alpha.19*
