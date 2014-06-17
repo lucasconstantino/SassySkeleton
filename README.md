@@ -21,7 +21,7 @@ There isn't really a "one command" way to start using this project, as you'll ha
 
 For command line users, I recommend your clone this repository to a directory inside your project root (again, with a name of choice). For a shortcut, inside your project's root, clone using the following command:
 
-    $ git clone https://github.com/lucascsilva/compass-boilerplate.git sass
+    $ git clone https://github.com/lucasconstantino/SassySkeleton.git sass
 
 After that, do not forget if you are versioning your project it is important that you remove the *.git* file inside the cloned directory. You can do so by running the following command right after the one before:
 
