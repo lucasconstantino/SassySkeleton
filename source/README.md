@@ -28,4 +28,4 @@ Many applications will never have the need for more then one compiled CSS file. 
 
 ## Partials
 
-> Usually with Sass we use "_" (underline) preceding your file names to avoid them from beeing compiled by Sass, what makes them *partials*. In this structure, as we divide all our files in multiple directories and use Compass' [*add_import_path*](http://compass-style.org/help/tutorials/configuration-reference/) to have them all available, only the *sources* directory will be watched against changes and get compiled, so the files on the other directories don't have to use the underline naming to be ignored.
+Usually with Sass we use "_" (underline) preceding your file names to avoid them from beeing compiled by Sass, what makes them *partials*. In this structure, as we divide all our files in multiple directories and use Compass' [*add_import_path*](http://compass-style.org/help/tutorials/configuration-reference/) to have them all available, only the *sources* directory will be watched against changes and get compiled, so the files on the other directories don't have to use the underline naming to be ignored.
