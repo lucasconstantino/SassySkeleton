@@ -3,7 +3,7 @@
 
 This directory is reserved to create reusable non-emitting components. At the best scenario, the files in this directory should contain most of the style definitions you have in your project.
 
-In comparison to the [Atomic Design methodology proposition](http://bradfrostweb.com/blog/post/atomic-web-design), the components would be our atoms, molecules and sometimes even organisms.
+In comparison to the [Atomic Design](http://bradfrostweb.com/blog/post/atomic-web-design) methodology proposition, the components would be our atoms, molecules and sometimes even organisms.
 
 > Components are the core piece of our CSS styles. These components should always be context unaware and be the smallest possible.
 
