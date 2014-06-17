@@ -5,14 +5,14 @@ This directory should be composed of non-emitting partials. That means no file i
 
 This structure foresees the division of library in 3 main types:
 
-* [/settings](/settings)
-* [/components](/components)
-* [/extensions](/extensions)
+* [/settings](settings)
+* [/components](components)
+* [/extensions](extensions)
 
 > Also, there is a directory reserved to organize sprites, if you happen to use any. That is where you should put source images of your sprites, that will be compiled using [Compass sprite generation](http://compass-style.org/help/tutorials/spriting/).
 
 
-### [Settings](/settings)
+### [Settings](settings)
 
 If you have a group of common settings, this group should have a file in this directory. By default (and to serve as an example), this skeleton brings 3 commonly used setting files:
 
@@ -29,13 +29,13 @@ Please, refer to the [sprites documentation](sprites/README.md) for it is pretty
 Sprites are pretty complicated. The main reason is because Compass will emit basic class selectors for your sprites each time you import one, what would cause for the emission of CSS from the library, what is not a desired behavior as stated above. If you are going to use sprites, I would recommend you read all the inline documentation on the *[sprites.sass](settings/sprites.sass)* file, as there is already a nice approach solving this issue.
 
 
-### [Components](/components)
+### [Components](components)
 
 Components are the core piece of our CSS styles. These components should always be context unaware and be the smallest possible.
 
-Please, have a look at the [README.md](/components) for components, as it has plenty of documentation on how should components be created, going through the topic of *mixins* vs *placeholders*.
+Please, have a look at the [README.md](components) for components, as it has plenty of documentation on how should components be created, going through the topic of *mixins* vs *placeholders*.
 
 
-### [Extensions](/extensions)
+### [Extensions](extensions)
 
-It is very common to use third party in our projects. This directory is reserved for that code. Please, refer to the [README.md](/extensions) inside that directory to better understand how to install extensions and make use of them.
+It is very common to use third party in our projects. This directory is reserved for that code. Please, refer to the [README.md](extensions) inside that directory to better understand how to install extensions and make use of them.
