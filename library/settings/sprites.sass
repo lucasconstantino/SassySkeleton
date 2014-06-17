@@ -68,13 +68,35 @@
  * Sass partial, containing all the sprite selectors AND
  * some mixins for common sprite usage. These mixins have to
  * be overwritten in order for them to use placeholder based
- * classes for each image selector. We only keep this mixins
- * in another file and on another partial category directory
- * to keep things in order.
+ * classes for each image selector. This mixin is defined below.
  */
 
-$placeholder-sprites: true
-@import mixins/sprites
+$placeholder-sprites: false !default
+
+
+/*----------------------------------------------------------
+ * Compass "sprites" mixin overwrite
+ *----------------------------------------------------------
+ * This mixin is an overwritted version of one found at the
+ * Compass' base sprites mixin partial. It is been used as
+ * part of the solution to transform the sprite selectors
+ * into placeholder selectors, so that the sprites partial
+ * can be a non-emitting one.
+ * 
+ * Read the sass/def/_sprites.sass to fully understand this
+ * issue.
+ */
+
+=sprites($map, $sprite-names, $base-class: false, $dimensions: false, $prefix: sprite-map-name($map), $offset-x: 0, $offset-y: 0, $use-percentages: false, $separator: $default-sprite-separator)
+  $base-selector: if($placeholder-sprites, "%", ".")
+  @each $sprite-name in $sprite-names
+    @if sprite_does_not_have_parent($map, $sprite-name)
+      $full-sprite-name: "#{$prefix}#{$separator}#{$sprite-name}"
+      @if sprite_has_valid_selector($full-sprite-name)
+        #{$base-selector}#{$full-sprite-name}
+          @if $base-class
+            @extend #{$base-class}
+          +sprite($map, $sprite-name, $dimensions, $offset-x, $offset-y, $use-percentages, $separator: $separator)
 
 /*----------------------------------------------------------
  * 4) - Include sprites
