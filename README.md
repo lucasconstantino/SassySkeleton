@@ -80,7 +80,7 @@ In the *partials* directory, you will have many element specific files. In the *
 
 ### Flowchart of Imports
 
-![Flowchart of Imports](https://docs.google.com/drawings/d/1vMPM1GPHZ0kFuCXYYTPMHIHvk0zYH0m3gti8KnmZLws/pub?w=728&h=653)
+![Flowchart of Imports](https://docs.google.com/drawings/d/1vMPM1GPHZ0kFuCXYYTPMHIHvk0zYH0m3gti8KnmZLws/pub?w=728)
 
 
 ## License
