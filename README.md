@@ -78,6 +78,11 @@ In the *partials* directory, you will have many element specific files. In the *
 
 > Usually with Sass we use "_" (underline) preceding your file names to avoid them from beeing compiled by Sass, what makes them *partials*. In this structure, as we divide all our files in multiple directories and use [Compass' *add_import_path*](http://compass-style.org/help/tutorials/configuration-reference/) to have them all available, only the *sources* directory will be watched against changes and get compiled, so the files on the other directories don't have to use the underline naming to be ignored.
 
+### Flowchart of Imports
+
+![Flowchart of Imports](https://docs.google.com/drawings/d/1vMPM1GPHZ0kFuCXYYTPMHIHvk0zYH0m3gti8KnmZLws/pub?w=728&h=653)
+
+
 ## License
 
 Copyright (c) 2014 Lucas Constantino Silva.
