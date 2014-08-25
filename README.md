@@ -2,7 +2,7 @@
 
 <img src="brand.jpg" align="right" />
 
-[![Sass v3.3.0](http://img.shields.io/badge/Sass-3.3.x-ff69b4.svg?style=flat)](https://github.com/sass/sass) [![Compass v1.0.0.alpha.19](http://img.shields.io/badge/Compass-1.0.0.alpha.19-red.svg?style=flat)](https://github.com/chriseppstein/compass) [![Sass Globbing v1.1.0](http://img.shields.io/badge/Sass Globbing-1.1.0-ff69b4.svg?style=flat)](https://github.com/chriseppstein/sass-globbing)
+[![Sass v3.4.x](http://img.shields.io/badge/Sass-3.4.x-ff69b4.svg?style=flat)](https://github.com/sass/sass) [![Compass v1.0.1](http://img.shields.io/badge/Compass-1.0.1-red.svg?style=flat)](https://github.com/chriseppstein/compass) [![Sass Globbing v1.1.0](http://img.shields.io/badge/Sass Globbing-1.1.0-ff69b4.svg?style=flat)](https://github.com/chriseppstein/sass-globbing)
 
 > A boilerplate for better structured styles based on Sass & Compass.
 
@@ -44,8 +44,8 @@ Keep in mind that **if using a version control system**, you should probably add
 
 This structure depends on three gems on specific versions to work:
 
-* Sass *>= v3.3.0*
-* Compass *>= v1.0.0.alpha.19*
+* Sass *>= v3.4.0*
+* Compass *>= v1.0.1*
 * Sass Globbing *>= 1.1.0*
 
 To install a specific version of a gem you can use ```gem install [gem] -v [version]```. However, I recommend you use [Bundler](http://bundler.io/) for the task. After installing it, all you would have to do is run ```bundle install``` inside *sass* directory (or whatever you called it) to install the necessary gems. After that, if you have these gems with other versions for other projects, you would have to run Compass using the commands preceded by ```bundle exec```, like ```bundle exec compass compile``` or ```bundle exec compass watch -e development```.
